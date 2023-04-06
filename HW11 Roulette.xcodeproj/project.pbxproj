@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		CFE91DA629DD8C1800DCAC3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE91DA529DD8C1800DCAC3B /* AppDelegate.swift */; };
 		CFE91DA829DD8C1800DCAC3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE91DA729DD8C1800DCAC3B /* SceneDelegate.swift */; };
-		CFE91DAA29DD8C1800DCAC3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE91DA929DD8C1800DCAC3B /* ViewController.swift */; };
 		CFE91DAD29DD8C1800DCAC3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE91DAB29DD8C1800DCAC3B /* Main.storyboard */; };
 		CFE91DAF29DD8C1900DCAC3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE91DAE29DD8C1900DCAC3B /* Assets.xcassets */; };
 		CFE91DB229DD8C1900DCAC3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE91DB029DD8C1900DCAC3B /* LaunchScreen.storyboard */; };
+		CFE91DBA29DD8CA800DCAC3B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE91DB929DD8CA800DCAC3B /* MainViewController.swift */; };
+		CFE91DBC29DD94DA00DCAC3B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE91DBB29DD94DA00DCAC3B /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CFE91DA229DD8C1800DCAC3B /* HW11 Roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW11 Roulette.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE91DA529DD8C1800DCAC3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFE91DA729DD8C1800DCAC3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFE91DA929DD8C1800DCAC3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CFE91DAC29DD8C1800DCAC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFE91DAE29DD8C1900DCAC3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFE91DB129DD8C1900DCAC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFE91DB329DD8C1900DCAC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE91DB929DD8CA800DCAC3B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CFE91DBB29DD94DA00DCAC3B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		CFE91D9929DD8C1700DCAC3B = {
 			isa = PBXGroup;
 			children = (
+				CFE91DBB29DD94DA00DCAC3B /* Model.swift */,
 				CFE91DA429DD8C1800DCAC3B /* HW11 Roulette */,
 				CFE91DA329DD8C1800DCAC3B /* Products */,
 			);
@@ -56,9 +59,9 @@
 		CFE91DA429DD8C1800DCAC3B /* HW11 Roulette */ = {
 			isa = PBXGroup;
 			children = (
+				CFE91DB929DD8CA800DCAC3B /* MainViewController.swift */,
 				CFE91DA529DD8C1800DCAC3B /* AppDelegate.swift */,
 				CFE91DA729DD8C1800DCAC3B /* SceneDelegate.swift */,
-				CFE91DA929DD8C1800DCAC3B /* ViewController.swift */,
 				CFE91DAB29DD8C1800DCAC3B /* Main.storyboard */,
 				CFE91DAE29DD8C1900DCAC3B /* Assets.xcassets */,
 				CFE91DB029DD8C1900DCAC3B /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE91DAA29DD8C1800DCAC3B /* ViewController.swift in Sources */,
+				CFE91DBA29DD8CA800DCAC3B /* MainViewController.swift in Sources */,
 				CFE91DA629DD8C1800DCAC3B /* AppDelegate.swift in Sources */,
 				CFE91DA829DD8C1800DCAC3B /* SceneDelegate.swift in Sources */,
+				CFE91DBC29DD94DA00DCAC3B /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +297,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +325,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
